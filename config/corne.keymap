@@ -22,7 +22,7 @@
 &none  &kp Q        &kp W            &kp F           &kp P             &kp B      &kp J    &kp L              &kp U            &kp Y             &kp SQT      &none
 &none  &mt LCTRL A  &mt LEFT_ALT R   &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G      &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I   &mt RCTRL O  &none
 &none  &kp Z        &mt RIGHT_ALT X  &kp C           &kp D             &kp V      &kp K    &kp H              &kp COMMA        &mt LEFT_ALT DOT  &kp FSLH     &none
-                                     &lt 2 ESCAPE    &lt 1 SPACE       &kp TAB    &kp RET  &kp BACKSPACE      &kp DELETE
+                                     &lt 2 ESCAPE    &lt 1 SPACE       &kp TAB    &kp RET  &lt 3 BACKSPACE    &kp DELETE
             >;
         };
 
@@ -53,6 +53,15 @@
 &trans  &kp LCTRL   &kp LEFT_ALT   &kp LEFT_GUI  &kp LEFT_SHIFT  &none    &none       &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &trans
 &trans  &trans      &kp RIGHT_ALT  &none         &none           &none    &none       &none       &none              &none            &none       &trans
                                    &trans        &none           &none    &kp C_STOP  &kp C_PLAY  &kp C_MUTE
+            >;
+        };
+
+        num_layer {
+            bindings = <
+&trans  &kp LEFT_BRACKET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET    &none  &none            &none          &none          &none      &trans
+&trans  &kp SEMICOLON     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL  &trans
+&trans  &kp GRAVE         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH        &none  &none            &none          &kp LEFT_ALT   &none      &trans
+                                           &kp KP_DOT       &kp KP_NUMBER_0  &kp MINUS            &none  &trans           &none
             >;
         };
     };
